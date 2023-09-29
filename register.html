@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare | Register</title>
+    <link rel="shortcut icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="styleregister.css">
+    <script src="scriptregister.js"></script>
+</head>
+<body>
+      <!-- HEADER -->
+      <div class="nav">
+        <div class="name">
+            <a href="index.html"><img src="icon.png" alt=""></a>
+        </div>
+
+        <input type="checkbox" id="check">
+        <a href="#check">
+            <label for="check" class="hamburger-button"> 
+                &#9776
+            </label>
+        </a>    
+       
+        
+
+        <ul class="linksnav">
+            <li><a href="index.html">Home</a></li>
+            <li class="p-toggle"><a href="">Products</a>
+            <div class="products-dropdown">
+                <div class="products-content">
+                    <a href="">Healthcare</a>
+                    <a href="products.html">Cosmetic</a>
+                    <a href="">Misc.</a>
+                </div>
+            </div>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+        <div class="boxLogin">
+            <li><a class="login" href="login.html">Login</a></li>
+        </div>
+    </div>
+    <form class="content" name="form-regist" onsubmit="return false">
+        <h1>Register</h1>
+        <br>
+        <span id="error"></span>
+        <br>
+        <br>
+        <br>
+        <div class="field-name">
+            <div class="input-name">
+                <input type="name" id="name" name="name" placeholder="Full Name" required>
+            </div>
+        </div>
+            <br>
+            <div class="field-email">
+                <div class="input-email">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+            </div>
+        <br>
+            <h5>Gender</h5>
+            <div class="pick-gender">
+                <div class="radio-btn">
+                    <input type="radio" id="gender-male" name="gender" value="Male" required>
+                    <label for="gender-male">Male</label>
+                    <input type="radio" id="gender-female" name="gender" value="Female" required>
+                    <label for="gender-female">Female</label>
+                </div>
+            </div>
+            <br>
+            <h5>City</h5>
+            <div class="pick-city">
+                <div class="dropdown-list-city">
+                    <input name="city" id="city" list="cities" placeholder="--- Select a city ---" required>
+                    <datalist id="cities">
+                        <option value="Jakarta">
+                        <option value="Palembang">
+                        <option value="Surabaya">
+                        <option value="Semarang">
+                        <option value="Yogyakarta">
+                        <option value="Bandung">
+                        <option value="Denpasar">
+                        <option value="Banda Aceh">
+                        <option value="Pontianak">
+                        <option value="Padang">
+                        <option value="Jambi">
+                        <option value="Bengkulu">
+                        <option value="Jayapura">
+                        <option value="Palangkaraya">
+                        <option value="Makassar">
+                        <option value="Kupang">
+                        <option value="Medan">
+                        <option value="Pekanbaru">
+                        <option value="Tangerang">
+                </div>
+            </div>
+            <h6>Password</h5>
+            <div class="field-pass">
+                <div class="input-pass">
+                    <input type="password" id="pass" name="pass" required>
+                </div>
+            </div>
+            <br>
+            <h6>Confirm Password</h5>
+            <div class="field-conpass">
+                <div class="input-conpass">
+                    <input type="password" id="conpass" name="pass" required>
+                </div>
+            </div>
+            <br>
+            <br>
+            
+            <button type="submit" onclick="formValidation()" id="submit">Register</button>
+            <!-- <div class="clear"></div> -->
+    </form>
+    <br>
+    <br>
+    <!-- FOOTER -->
+    <footer class="foot">
+        <div class="social-media">
+            <div class="twitter">
+            <a href="https://twitter.com/home" target="_blank"><img src="Twitter.png" alt=""></a>
+            </div>
+            <div class="facebook">
+            <a href="https://www.facebook.com" target="_blank"><img src="facebook.png" alt=""></a>
+            </div>
+            <div class="instagram">
+            <a href="https://www.instagram.com" target="_blank"><img src="Instagram.png" alt=""></a>
+            </div>
+        </div>
+        <ul class="copyright">
+            <li>Copyright © 2022. Jerico Asan. All Rights Reserved.</li>
+        </ul>
+
+    </footer>
+</body>
+</html>

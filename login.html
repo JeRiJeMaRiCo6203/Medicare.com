@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare | Login</title>
+    <link rel="shortcut icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="stylelogin.css">
+    <script src="scriptlogin.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="nav">
+        <div class="name">
+            <a href="home.html"><img src="icon.png" alt=""></a>
+        </div>
+
+        <input type="checkbox" id="check">
+        <a href="#check">
+            <label for="check" class="hamburger-button"> 
+                &#9776
+            </label>
+        </a>    
+       
+        
+
+        <ul class="linksnav">
+            <li><a href="index.html">Home</a></li>
+            <li class="p-toggle"><a href="">Products</a>
+            <div class="products-dropdown">
+                <div class="products-content">
+                    <a href="">Healthcare</a>
+                    <a href="products.html">Cosmetic</a>
+                    <a href="">Misc.</a>
+                </div>
+            </div>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+        <div class="boxLogin">
+            <li><a class="login" href="login.html">Login</a></li>
+        </div>
+    </div>
+    <form class="content" name="form-login">
+        <h1>Login</h1>
+        <br>
+        <h5>E-mail</h5>
+        <div class="field-email">
+            <div class="input-email">
+                <input type="email" id="email" name="email" placeholder="Enter your email address...." required>
+            </div>
+        </div>
+        <br>
+        <h5>Password</h5>
+        <div class="field-pass">
+            <div class="input-pass">
+                <input type="password" id="pass" name="pass" placeholder="Enter your password...."required>
+            </div>
+        </div>
+        <br>
+        <span id="error"></span>
+        <br>
+        <br>
+        <button type="submit" onclick="formValidation()">Login</button>
+        <div class="clear"></div>
+        <br>
+        <br>
+        <br>
+        <h5 class="bawah">Don't have an account yet? <a href="register.html">Register</a> now!</h5>
+    </form>
+
+     <!-- FOOTER -->
+     <footer class="foot">
+        <div class="social-media">
+            <div class="twitter">
+            <a href="https://twitter.com/home" target="_blank"><img src="Twitter.png" alt=""></a>
+            </div>
+            <div class="facebook">
+            <a href="https://www.facebook.com" target="_blank"><img src="facebook.png" alt=""></a>
+            </div>
+            <div class="instagram">
+            <a href="https://www.instagram.com" target="_blank"><img src="Instagram.png" alt=""></a>
+            </div>
+        </div>
+        <ul class="copyright">
+            <li>Copyright © 2022. Jerico Asan. All Rights Reserved.</li>
+        </ul>
+
+    </footer>
+</body>
+</html>
